@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Dropdown menu trong bootstrap</title>
+</head>
+<body>      
+    <style>
+        #my-dropdown .dropdown-menu {
+            width: 300px;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Dropdown menu Bootstrap</h1>
+                <div class="dropdown float-right" id="my-dropdown">
+                    <button class="btn btn-primary dropdown-toggle" data-display="static" data-toggle="dropdown">AVATAR</button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="" class="dropdown-item">Menu item 1</a>
+                        <a href="" class="dropdown-item">Menu item 2</a>
+                        <a href="" class="dropdown-item">Menu item 3</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-header">
+                            MORE MENU
+                        </div>
+                        <a href="" class="dropdown-item">Menu item 4</a>
+                        <a href="" class="dropdown-item">Menu item 5</a>
+                        <div class="dropdown-divider"></div>
+                        <p class="p-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, officiis! 
+                            Maiores quasi minus commodi mollitia?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            // $("#my-dropdown").on('show.bs.dropdown', function (){
+            //     alert("SHOW");
+            // });
+            $("#my-dropdown").on('hide.bs.dropdown', function (){
+                alert("HIDE");
+            });
+        })
+    </script>
+</body>
+</html>
